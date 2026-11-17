@@ -1,34 +1,43 @@
-# Cybersecurity-Learning-Journey
-# Learning Roadmap
+#Cybersecurity Learning Journey
 
-01-Networking/
-## theory
-- got to learn networking from Cisco Academy
-## Practical  
-- Cisco Packettracer
-## Understanding Linux Commands
-- Common ls Linux Flags
+##About This Repository
 
-ls	List files and directories
-ls -l	Long listing / detailed information
-ls -a	Include hidden files
-ls -r	Reverse the sorting order
-ls -h	Human-readable sizes, usually with -l
-ls -k	Display sizes in 1024-byte blocks, when using -l
-ls -R	Recursively list subdirectories
-ls -t	Sort by modification time
-ls -s Sort by file size
+Welcome to my cybersecurity learning journey
 
-You can combine compatible short options. ie: ls -lah is equivalent to ls -l -a -h
+I am building my knowledge and practical skills in cybersecurity, starting with the fundamentals of Linux, networking, programming and information security.
 
-### Permissions Breakdown
-- (-)Type, (rwx)Owner, (r-x)Group, (r--)Others
-- r=read, w=write, x=execute, -=permission not granted
-     #### Why Permission Management Matters in Cybersecurity
-  These commands become useful when:
-   - Investigating suspicious files
-   - Checking executable scripts
-   - I dentifying files accessible to other users
-   - Auditing permissions
-   - Inspecting directories during incident response
-   - Understanding Linux Previledge escalation vulnerabilities
+My goal is to develop a strong technical foundation, gain hands-on experience through practical labs, and gradually explore areas such as penetration testing, vulnerability assessment, defensive security, cloud security and AI security.
+
+This repository documents my learning process, practical exercises, research, challenges and projects.
+
+I believe in learning by doing, understanding the concepts behind the tools I use, and documenting my progress along the way.
+
+## Current Learning Focus
+
+- Linux fundamentals and command-line operations
+
+- File systems, users, groups and permissions
+
+- Networking fundamentals
+
+- Bash and Python scripting
+
+- Cybersecurity principles and best practices
+
+- System administration and troubleshooting
+
+- Areas I Plan to Explore
+
+- Vulnerability assessment and management
+
+- Penetration testing
+
+- OWASP Top 10 and web application security
+
+- Security Operations Centre (SOC) fundamentals
+
+- Threat detection and incident response
+
+- Cloud security
+
+- AI security and emerging technologies
