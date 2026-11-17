@@ -1,6 +1,6 @@
-#Cybersecurity Learning Journey
+# Cybersecurity Learning Journey
 
-##About This Repository
+## About This Repository
 
 Welcome to my cybersecurity learning journey
 
