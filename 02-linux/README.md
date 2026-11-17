@@ -26,7 +26,7 @@ Explore basic networking commands.
 
 Understand the relevance of Linux in cybersecurity.
 
-Topics Covered
+## Topics Covered
 
 Linux command-line fundamentals
 
@@ -62,41 +62,21 @@ My approach combines theoretical learning with practical exercises. I document c
 
 ## Learning Progress
 
-Topic
-
-Status
-
 Linux command-line basics
-
-Studied
 
 Linux commands and flags
 
-Studied
-
 Filesystem navigation
-
-Studied
 
 File management
 
-Studied
-
 Searching and filtering
-
-Studied
 
 Permissions and ownership
 
-Introduced
-
 User and process management
 
-Introduced
-
 Basic networking commands
-
-Introduced
 
 ## Next Learning Areas
 
