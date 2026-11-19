@@ -1,4 +1,4 @@
-##Essential Linux Commands
+## Essential Linux Commands
 
 ### 1. Introduction
 
