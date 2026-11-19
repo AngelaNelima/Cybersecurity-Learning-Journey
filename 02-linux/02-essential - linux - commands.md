@@ -47,45 +47,33 @@ mkdir Creates a directory.
 
 tree Displays directories and files in a tree structure.
 
-4. File Management
+### 4. File Management
 
-touch
+touch Creates an empty file or updates its timestamps.
 
-Creates an empty file or updates its timestamps.
+i.e: touch notes.txt
 
-touch notes.txt
+cat Displays file contents.
 
-cat
+i.e cat notes.txt
 
-Displays file contents.
+less Views files page by page.
 
-cat notes.txt
-
-less
-
-Views files page by page.
-
-less notes.txt
+i.e less notes.txt
 
 Press q to exit.
 
-cp
-
-Copies files.
+cp Copies files.
 
 cp notes.txt backup.txt
 
-mv
+mv Moves or renames files.
 
-Moves or renames files.
+i.e mv notes.txt new-notes.txt
 
-mv notes.txt new-notes.txt
+echo Displays or writes text.
 
-echo
-
-Displays or writes text.
-
-echo "Learning Linux" > notes.txt
+i.e echo "Learning Linux" > notes.txt
 
 The > operator overwrites existing content.
 
@@ -93,13 +81,11 @@ The >> operator appends content.
 
 echo "Cybersecurity journey" >> notes.txt
 
-5. Searching and Filtering
+### 5. Searching and Filtering
 
-find
+find Searches for files and directories.
 
-Searches for files and directories.
-
-find . -name "*.log"
+i.e find . -name "*.log"
 
 Finds files ending in .log under the current directory.
 
@@ -107,11 +93,9 @@ find . -mtime -1
 
 Finds files modified within approximately the last 24 hours.
 
-grep
+grep Searches for specific text within files.
 
-Searches for specific text within files.
-
-grep "failed" auth.log
+i.e grep "failed" auth.log
 
 Useful options:
 
@@ -124,11 +108,9 @@ grep -r "password" .
 
 These commands are useful when analysing logs and searching for specific patterns.
 
-6. Permissions and Ownership
+### 6. Permissions and Ownership
 
-chmod
-
-Changes file permissions.
+chmo Changes file permissions.
 
 chmod 755 script.sh
 chmod 644 notes.txt
@@ -136,37 +118,21 @@ chmod 600 private.txt
 
 Numeric permission values:
 
-Number
+7 Read, write and execute
 
-Meaning
+6 Read and write
 
-7
+5 Read and execute
 
-Read, write and execute
+4 Read only
 
-6
-
-Read and write
-
-5
-
-Read and execute
-
-4
-
-Read only
-
-0
-
-No permissions
+0 No permissions
 
 The three digits represent the owner, group and others respectively.
 
-chown
+chown Changes file ownership.
 
-Changes file ownership.
-
-sudo chown angie notes.txt
+i.e sudo chown angie notes.txt
 
 Changes the owner.
 
@@ -174,27 +140,19 @@ sudo chown angie:angie notes.txt
 
 Changes the owner and group.
 
-7. User Identification
+### 7. User Identification
 
-whoami
+whoami Displays the current username.
 
-Displays the current username.
-
-whoami
-
-id
+whoami id
 
 Displays user ID, group ID and group membership information.
 
-id
+id These commands help identify the account executing commands and its group memberships.
 
-These commands help identify the account executing commands and its group memberships.
+### 8. Administrative Privileges
 
-8. Administrative Privileges
-
-sudo
-
-Allows an authorised user to execute commands with elevated privileges.
+sudo Allows an authorised user to execute commands with elevated privileges.
 
 Example:
 
@@ -202,154 +160,61 @@ sudo apt update
 
 Administrative privileges should be used carefully because they allow changes to important system configurations.
 
-9. Process Management
+### 9. Process Management
 
-ps
+ps Displays information about running processes.
 
-Displays information about running processes.
-
-ps aux
-
-Search for a process:
+ps aux Search for a process:
 
 ps aux | grep firefox
 
-kill
+kill Sends a signal to a process.
 
-Sends a signal to a process.
-
-kill PID
-
-The default signal requests graceful termination.
+kill PID The default signal requests graceful termination.
 
 Always identify the correct process before terminating it.
 
-10. Basic Networking Commands
+### 10. Basic Networking Commands
 
-ip addr
+ip addr Displays network interfaces and assigned IP addresses.
 
-Displays network interfaces and assigned IP addresses.
+ip route Displays the routing table.
 
-ip addr
+ping Tests network reachability.
 
-ip route
+ss Displays socket information.
 
-Displays the routing table.
+curl Requests information from a URL.
 
-ip route
-
-ping
-
-Tests network reachability.
-
-ping -c 4 8.8.8.8
-
-ss
-
-Displays socket information.
-
-ss -tuln
-
-curl
-
-Requests information from a URL.
-
-curl -I https://example.com
+i.e curl -I https://example.com
 
 The -I option requests HTTP response headers.
 
-11. Practical Exercise
+### 11. Cybersecurity Relevance
 
-The following commands combine several of the concepts covered in this lesson.
+ls -lah  Inspect files and permissions
 
-Create and manage files
+find  Locate files during system inspection
 
-mkdir linux-lab
-cd linux-lab
+grep  Search logs and configuration files
 
-touch notes.txt
-echo "My Linux learning journey" > notes.txt
+chmod  Manage file permissions
 
-cat notes.txt
+whoami  Identify the current user
 
-cp notes.txt backup.txt
-mv backup.txt linux-backup.txt
+id Inspect user and group memberships
 
-ls -lah
+ps aux Inspect running processes
 
-Inspect the system
+ip addr Identify network interfaces
 
-whoami
-id
-pwd
-uname -a
-df -h
+ip route Inspect network routing
 
-Inspect networking
+ss -tuln  Inspect listening services
 
-ip addr
-ip route
-ss -tuln
+curl -I  Inspect HTTP response headers
 
-Inspect running processes
-
-ps aux
-
-Search for files
-
-find . -name "*.txt"
-
-12. Cybersecurity Relevance
-
-Command
-
-Security Application
-
-ls -lah
-
-Inspect files and permissions
-
-find
-
-Locate files during system inspection
-
-grep
-
-Search logs and configuration files
-
-chmod
-
-Manage file permissions
-
-whoami
-
-Identify the current user
-
-id
-
-Inspect user and group memberships
-
-ps aux
-
-Inspect running processes
-
-ip addr
-
-Identify network interfaces
-
-ip route
-
-Inspect network routing
-
-ss -tuln
-
-Inspect listening services
-
-curl -I
-
-Inspect HTTP response headers
-
-13. Security Considerations
+### 12. Security Considerations
 
 Understand commands before executing them.
 
@@ -363,13 +228,13 @@ Be cautious with destructive commands such as rm.
 
 Only investigate systems you own or have permission to access.
 
-14. Key Takeaways
+### 13. Key Takeaways
 
 Linux commands provide tools for filesystem navigation, file management, searching, permissions, process management and networking.
 
 Understanding these commands provides an important foundation for system administration and cybersecurity.
 
-15. Learning Status
+### 14. Learning Status
 
 Completed: Essential Linux commands and introductory system inspection.
 
